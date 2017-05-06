@@ -1,0 +1,72 @@
+"Games"
+{
+	"tf"
+	{
+		"Addresses"
+		{
+			"CNavMesh"
+			{
+				"linux"
+				{
+					"signature" "TheNavMesh"
+				}
+				"read" "0"
+			}
+		}
+		"Offsets"
+		{
+			"CNavMesh::GetSubVersionNumber"
+			{
+				"windows"	"12"
+				"linux"		"13"
+				"mac"		"13"
+			}
+		}
+		"Signatures"
+		{
+			/* Find TheNavMesh singleton class */
+			
+			"TheNavMesh"
+			{
+				"library"	"server"
+				"linux"		"@TheNavMesh"
+			}
+			
+			"CNavMesh::GetNearestNavAreaForPosition"
+			{
+				"library"	"server"
+				"linux"		"@_ZNK8CNavMesh17GetNearestNavAreaERK6Vectorbfbbi"
+			}
+			
+			"CNavMesh::GetNearestNavAreaForEntity"
+			{
+				"library"	"server"
+				"linux"		"@_ZNK8CNavMesh17GetNearestNavAreaEP11CBaseEntityif"
+			}
+			
+			"CNavMesh::GetNavAreaByID"
+			{
+				"library"	"server"
+				"linux"		"@_ZNK8CNavMesh14GetNavAreaByIDEj"
+			}
+			
+			"CNavMesh::GetFilename"
+			{
+				"library"	"server"
+				"linux"		"@_ZNK8CNavMesh11GetFilenameEv"
+			}
+			
+			"CNavMesh::RemoveNavArea"
+			{
+				"library"	"server"
+				"linux"		"@_ZN8CNavMesh13RemoveNavAreaEP8CNavArea"
+			}
+			
+			"CNavArea::HasNodes"
+			{
+				"library"	"server"
+				"linux"		"@_ZNK8CNavArea8HasNodesEv"
+			}
+		}
+	}
+}
